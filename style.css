@@ -1,0 +1,239 @@
+body
+{
+	
+}
+.bg
+{
+	background: url(images/bg.jpg);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-filter: blur(1px);
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+.overlay
+{
+
+	background: ;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-filter: blur(1px);
+	background-size: 100px 100px;
+	opacity: 0.5;
+	background-color: #080808;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+.welcome_box
+{
+	top: 50%;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	box-shadow: rgb(0, 0, 0) 0px 0px 10px 2px;
+	-webkit-box-shadow: rgb(0, 0, 0) 0px 0px 10px 2px;
+    -moz-box-shadow: rgb(0, 0, 0) 0px 0px 10px 2px;
+    -o-box-shadow: rgb(0, 0, 0) 0px 0px 10px 2px;
+	background-color: #1E5166;
+	border-color: black;
+	width: 50%;
+	height: 50%;
+	z-index: 0;
+	border-radius: 10px;
+	opacity: .4;
+	-webkit-filter: blur(1px);	
+}
+.welcome_box_content
+{
+	z-index: 10;
+}
+.welcome_text
+{
+	opacity: 1;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -400%);
+	-wbekit-transform: translate(-50%, -400%);
+	-moz-transform: translate(-50%, -400%);
+	-o-transform: translate(-50%, -400%);
+	font-family: "Courier";
+	font-weight: bold;
+	color: #231F20;
+	font-size: 38;
+	width: 6em;
+	/*Animation Code*/
+	white-space: nowrap;
+	overflow: hidden;
+	animation: type 1s steps(10, end);
+	-webkit-animation: type 1s steps(10, end);
+	-moz-animation: type 1s steps(10, end);
+	-o-animation: type 1s steps(10, end);
+}
+.welcome_text:nth-child(2)
+{
+	opacity: 0;
+	animation: type2 1s steps(13,end);
+	-webkit-animation: type2 1s steps(13,end);
+	-moz-animation: type2 1s steps(13,end);
+	-o-animation: type2 1s steps(13,end);
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+/*"Welcome To" Animation Keyframes*/
+@keyframes type
+{
+	from {width: 0;}
+}
+@-webkit-keyframes type
+{
+	from {width: 0;}
+}
+@-moz-keyframes type
+{
+	from {width: 0;}
+}
+
+@-o-keyframes type
+{
+	from {width: 0;}
+}
+/*"Creative Soft" Animation Keyframes*/
+@keyframes type2
+{
+	
+	from {opacity: 0}
+	1% {opacity: 1;}
+	to {opacity: 1;}
+	100% {opacity: 1;}
+	from {width: 0;}
+}
+
+@-webkit-keyframes type2
+{
+	
+	from {opacity: 0}
+	1% {opacity: 1;}
+	to {opacity: 1;}
+	100% {opacity: 1;}
+	from {width: 0;}
+}
+
+@-moz-keyframes type2
+{
+	
+	from {opacity: 0}
+	1% {opacity: 1;}
+	to {opacity: 1;}
+	100% {opacity: 1;}
+	from {width: 0;}
+}
+@-o-keyframes type2
+{
+	
+	from {opacity: 0}
+	1% {opacity: 1;}
+	to {opacity: 1;}
+	100% {opacity: 1;}
+	from {width: 0;}
+}
+.welcome_logo
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*Animation Code*/
+	opacity: 0;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+
+	animation-name: fadein;
+	-webkit-animation-name: fadein;
+	-moz-animation-name: fadein;
+	-o-animation-name: fadein;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+
+	
+}
+@keyframes fadein
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes fadein
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+-moz-keyframes fadein
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+-o-keyframes fadein
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+#company_name
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 70%);
+	-webkit-transform: translate(-50%, 70%);
+	-moz-transform: translate(-50%, 70%);
+	-o-transform: translate(-50%, 70%);
+	font-family: "Neuropol";
+	font-weight: bold;
+	font-size: 38;
+	width: 8.2em;
+	color: #00A69C;
+}
+	/*Animation Code*/
+	/*white-space: nowrap;
+	overflow: hidden;
+	animation-delay: 1s;
+	-webkit-animation-delay: 2s;
+	animation: type2 1s steps(13, end);
+	-webkit-animation: type2 1s steps(13, end);
+}
+@keyframes type2
+{
+	from {width: 0;}
+
+}
+@-webkit-keyframes type2
+{
+	from {width: 0;}
+}*/
+#company_name span
+{
+	color: #231F20;
+	font-size: 48;
+}
